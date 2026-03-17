@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ static_url('css/index.css') }}">
+    <title>PDFMaker</title>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Transform your </br>
+            <span class="text">TEXT</span> to 
+            <span class="pdf">PDF</span>
+        </h1>
+
+        <p>
+            Turn plain chat-style writing into a clean
+            PDF. Wrap words with <span class="highlight">_ to underline</span>,
+            <span class="highlight">* to bold</span>.
+        </p>
+        <textarea id="text" rows="10" placeholder="Your text here..."></textarea>
+        
+        <select id="font-family">
+            <option value="Work sans">Work sans</option>
+            <option value="JetBrains">JetBrains</option>
+        </select>
+        <button id="btn">Download</button>
+    </div>
+
+    <script src="{{ static_url('js/index.js') }}"></script>
+</body>
+</html>
