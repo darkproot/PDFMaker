@@ -132,6 +132,7 @@ button:hover, button:active {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    font-weight: 900;
 }
 .highlight {
     border-bottom: 2px solid var(--bg-button);
