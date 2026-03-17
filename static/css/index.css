@@ -1,8 +1,8 @@
 :root {
-    --bg-1: #126650;
-    --bg-2: #3CBFA0;
-    --bg-3: #21F4BD;
-    --bg-4: #CFFFF1;
+    --bg-1: #031544;
+    --bg-2: #1c3ca1;
+    --bg-3: #5b4c97;
+    --bg-4: #bd6267;
     --bg-grid-width: 80px;
     --bg-container: #ffffff36;
     --border-container: #11111138;
@@ -23,10 +23,12 @@
     padding: 0;
     margin: 0;
     font-family: text, Arial, sans-serif;
+    font-weight: 500;
 }
 
 .container > h1 {
     text-align: center;
+    font-weight: bolder;
 }
 
 body {
