@@ -2,7 +2,7 @@ const textarea = document.getElementById('text');
 const font = document.getElementById('font-family');
 const button = document.getElementById('btn');
 
-const API = 'http://pdfmaker-bvjy.onrender.com'
+const API = 'https://pdfmaker-bvjy.onrender.com'
 
 button.addEventListener('click', post_data);
 
