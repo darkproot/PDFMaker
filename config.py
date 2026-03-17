@@ -2,7 +2,7 @@ import os
 
 class Config:
     DEBUG = True
-    PORT = 8888
+    PORT = int(os.environ.get("PORT", 8888))
     STATIC_PATH = os.path.join(os.path.dirname(__file__), "static")
     TEMPLATE_PATH = os.path.join(os.path.dirname(__file__), "templates")
     FONT_PATH = os.path.join(os.path.dirname(__file__), "database/fonts")
