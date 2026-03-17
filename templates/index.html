@@ -24,7 +24,7 @@
     <title>PDFMaker</title>
 </head>
 <body>
-    <div class="container">
+    <form onsubmit="event.preventDefault(); post_data()" class="container">
         <h1>
             Transform your </br>
             <span class="text">TEXT</span> to 
@@ -36,17 +36,23 @@
             PDF. Wrap words with <span class="highlight">_ to underline</span>,
             <span class="highlight">* to bold</span>.
         </p>
-        <textarea id="text" rows="10" placeholder="Your text here..."></textarea>
+        <textarea id="text" rows="10" placeholder="Your text here..." required></textarea>
         
-        <select id="font-family">
+        <select id="font-family" required>
             <option value="Work sans">Work sans</option>
             <option value="JetBrains">JetBrains</option>
         </select>
-        <button id="btn">
+
+        <div class="block">
+            <p>Name:</p>
+            <input type="text" id="output-name" placeholder="file.pdf (with the extension .pdf)" value="output.pdf" required />
+        </div>
+
+        <button type="submit" id="btn">
             <img src="https://pdfmaker-bvjy.onrender.com/image/download.svg" width="25px" height="25px" alt="download-image">
             Convert and Download
         </button>
-    </div>
+    </form>
 
     <script src="{{ static_url('js/index.js') }}"></script>
 </body>

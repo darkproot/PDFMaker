@@ -46,7 +46,7 @@ class Application(tornado.web.Application):
 
 
 async def main():
-    config = ProductionConfig()
+    config = DevelopmentConfig()
     app = Application(config)
     server = tornado.httpserver.HTTPServer(app)
     server.listen(config.PORT)

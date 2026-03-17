@@ -1,10 +1,12 @@
 const textarea = document.getElementById('text');
 const font = document.getElementById('font-family');
 const button = document.getElementById('btn');
+const output_name = document.getElementById('output-name');
 
 const API = 'https://pdfmaker-bvjy.onrender.com'
+// const API = 'http://localhost:8888'
 
-button.addEventListener('click', post_data);
+// button.addEventListener('submit', (e) => post_data(e));
 
 function post_data() {
     let data = {
@@ -22,7 +24,7 @@ function post_data() {
         .then(res => res.json())
         .then(data => {
             if (data.name) {
-                telechargerFichier(API + `/pdf/${data.name}`, data.name)
+                telechargerFichier(API + `/pdf/${data.name}`, output_name.value)
             }
         })
         .catch(err => console.error(err));
