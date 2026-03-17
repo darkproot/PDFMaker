@@ -104,11 +104,17 @@ select, button {
 }
 
 button {
+    padding: 12px 0;
     color: white;
     font-weight: bolder;
     background-color: var(--bg-button);
     cursor: pointer;
     transition: all .2s ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 button:hover, button:active {

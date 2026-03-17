@@ -26,6 +26,11 @@ class Application(tornado.web.Application):
                 r'/pdf/(.*)', 
                 tornado.web.StaticFileHandler, {
                 "path": config.PDF_PATH
+            }),
+            (
+                r'/image/(.*)', 
+                tornado.web.StaticFileHandler, {
+                "path": config.IMAGE_PATH
             })
         ]
 

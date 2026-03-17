@@ -3,7 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site pour convertir un texte en PDF.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="x-verse">
+
+    <meta property="og:title" content="PDFMaker">
+    <meta property="og:description" content="Site pour convertir un texte en PDF.">
+    <meta property="og:image" content="http://localhost:8888/image/pdf.svg">
+    <meta property="og:url" content="https://pdfmaker.onrender.com">
+    <meta property="og:type" content="website">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="PDFMaker">
+    <meta property="twitter:description" content="Site pour convertir un texte en PDF.">
+    <meta property="twitter:image" content="http://localhost:8888/image/pdf.svg">
+
     <link rel="stylesheet" href="{{ static_url('css/index.css') }}">
+    <link rel="shortcut icon" href="http://localhost:8888/image/pdf.svg" type="image/x-icon">
+
     <title>PDFMaker</title>
 </head>
 <body>
@@ -25,7 +42,10 @@
             <option value="Work sans">Work sans</option>
             <option value="JetBrains">JetBrains</option>
         </select>
-        <button id="btn">Download</button>
+        <button id="btn">
+            <img src="http://localhost:8888/image/download.svg" width="25px" height="25px" alt="download-image">
+            Convert and Download
+        </button>
     </div>
 
     <script src="{{ static_url('js/index.js') }}"></script>
