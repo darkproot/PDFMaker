@@ -4,7 +4,7 @@
     --bg-3: #5b4c97;
     --bg-4: #bd6267;
     --bg-grid-width: 80px;
-    --bg-container: #ffffff36;
+    --bg-container: #ffffff50;
     --border-container: #11111138;
     --bg-button: #1065C0;
     --bg-button-hover: #0747A1;
@@ -16,6 +16,17 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 * {
@@ -82,6 +93,7 @@ body::after {
     flex-direction: column;
     gap: 20px;
     max-width: 400px;
+    animation: fadeIn 1s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 
 textarea {
