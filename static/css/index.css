@@ -29,6 +29,8 @@
 .container > h1 {
     text-align: center;
     font-weight: bolder;
+    padding: 12px 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.152);
 }
 
 body {
@@ -157,6 +159,6 @@ button:hover, button:active {
 
 @media (max-width: 640px) {
     .container {
-        margin: 0 40px;
+        margin: 0 20px;
     }
 }
