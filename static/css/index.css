@@ -4,7 +4,7 @@
     --bg-3: #5b4c97;
     --bg-4: #bd6267;
     --bg-grid-width: 80px;
-    --bg-container: #ffffff50;
+    --bg-container: hsla(0, 0%, 100%, 0.2);
     --border-container: #11111138;
     --bg-button: #1065C0;
     --bg-button-hover: #0747A1;
@@ -87,7 +87,8 @@ body::after {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     z-index: 9999;
-    box-shadow: 0 0px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0px 3px rgba(0, 0, 0, 0.2),
+    inset 0 5px 10px rgba(255, 255, 255, 0.2);
     
     display: flex;
     flex-direction: column;
